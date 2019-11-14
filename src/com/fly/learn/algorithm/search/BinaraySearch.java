@@ -12,8 +12,8 @@ public class BinaraySearch {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8};
-//        int index = search(arr, 0, 0, arr.length - 1);
-        int index = searchWhile(arr, 6);
+        int index = search(arr, 6, 0, arr.length - 1);
+//        int index = searchWhile(arr, 6);
         System.out.println(index);
     }
 
@@ -33,7 +33,7 @@ public class BinaraySearch {
                 return temp;
             }
             if(value < arr[temp]) {
-                return search(arr, value, 0, temp - 1);
+                return search(arr, value, start, temp - 1);
             }
             if(value > arr[temp]) {
                 return search(arr, value, temp + 1, end);
@@ -58,7 +58,7 @@ public class BinaraySearch {
             return -1;
         }
         while (low <= high) {
-            System.out.println(++count);
+//            System.out.println(++count);
             int mid = (low + high) / 2;
             if(arr[mid] == value) {
                 return mid;
