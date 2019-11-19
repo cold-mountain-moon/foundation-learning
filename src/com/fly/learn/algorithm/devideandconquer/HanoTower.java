@@ -6,7 +6,7 @@ package com.fly.learn.algorithm.devideandconquer;
 public class HanoTower {
 
     public static void main(String[] args) {
-        hanoTowerProcess(62, 'A', 'B', 'C');
+        hanoTowerProcess(4, 'A', 'B', 'C');
 
     }
 
