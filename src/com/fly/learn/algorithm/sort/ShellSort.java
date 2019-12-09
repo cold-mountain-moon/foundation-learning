@@ -22,15 +22,16 @@ public class ShellSort {
      */
 
     public static void sort(int[] arr) {
+        // 第一次
         int step = arr.length / 2;
-
         int left = 0;
         int right = left + step;
 
-
-        while (step > 0 ) {
+        while (step > 0) {
             for(int i=left; i<right; i++) {
+//                if(arr[i]) {
 
+//                }
             }
         }
 
